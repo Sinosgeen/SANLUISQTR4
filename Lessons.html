@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <title>SAN LUIS PORTFOLIO</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="text/javascript">
+    function show_alert() {
+      var book = document.frmbook.cmbbook.value;
+      alert("WEEWOOWEEEWOO");
+    }
+
+    function bookcheck() {
+      var book = document.frmbook.cmbbook.value; 
+      switch (book) {
+        case "1":
+          alert("Julianrei");
+          break; 
+        case "2":
+          alert("I have no second name.");
+          break; 
+        case "3":
+          alert("San Luis");
+          break;
+        default:
+          alert("undetermined");
+          break; 
+      }
+    }
+
+    function check() {
+      if (document.example.answer.value == "ALB") {
+        alert("You've saved cookie kingdom!");
+      } else {
+        alert("Cookie God has destroyed the world, you failed!");
+      }
+    }
+  </script>
+</head>
+
+<style>
+  .container {
+    width: 75%;
+    background-color: #cad5e6;
+    opacity: 0.9; 
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    float: right;
+  }
+
+  th, td {
+    border-radius: 10px;
+  }
+
+  .Pages {
+    width: 20%;
+    margin: 20px auto;
+    opacity: 0.9999999; 
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    float: left; 
+    border-width: thick;
+    border: 2px solid black;
+    background-color: #c2b18c;
+  }
+</style>
+
+<body style="color: black; background-color:#c2b18c; font-family: 'Times New Roman', Times, serif;">
+  <div class="Pages">
+    <table>
+      <tr>
+        <td><h1 align="center"><u> Pages </u></h1></td>
+      </tr>
+      <tr>
+        <td align="center"><a href="Activities.html"><img src="ACTIVITIES.png" height="250" width="330" align="left" alt="lol"></a></td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <td align="center"><img src="LESSONS.png" height="250" width="330" align="left" alt="lol"></td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <td align="center"><a href="index.html"><img src="Home.png" height="250" width="330" align="left" alt="lol"></a></td>
+      </tr>
+    </table>
+    <tr>
+      <td><p><b>PLAY ME</b><i> The Color Violet | Tory Lanez </i></p>
+      <audio controls="play" src="violet.mp3" height="350" width="430" align="left" alt="lol"></audio></td>
+    </tr>
+  </div>
+
+  <div class="container">
+    <table style="font-size:60px" align="center">
+      <tr>
+        <td><h1 style="border: 2px solid black; background-color: #c2b18c;"><u> Lesson Outputs (very brief) </u></h1></td>
+      </tr>
+    </table>
+
+    <br><br><br>
+
+    <table style="font-size:35px; background-color: #c2b18c;  border: 2px solid black;">
+      <th> Lesson 1 </th>
+      <tr>
+        <td> We learned about a lot of popups and events in this topic. Try this alert!.</td>
+        <td><img src="LESSON1.png" height="450" width="1000" alt="picture"></td>
+      </tr>
+      <tr>
+        <td><input type="button" onclick="show_alert()" value="Woopwoop"></td>
+      </tr>
+    </table>
+
+    <br><br>
+
+    <table style="font-size:35px; background-color: #c2b18c;  border: 2px solid black;">
+      <th> Lesson 2 </th>
+      <tr>
+        <td>We learned about many conditions! Try this one below.</td>
+        <td><img src="LESSON2.png" height="450" width="1000" alt="picture"></td>
+      </tr>
+      <tr>
+        <td>
+          <form name="frmbook">
+            <select name="cmbbook">
+              <option value="1">First name!!</option>
+              <option value="2">Second name!</option>
+              <option value="3">Last name!</option>
+            </select>
+            <input type="button" name="combo" value="Wanna see my name?" onClick="bookcheck()">
+          </form>
+        </td>
+      </tr>
+    </table>
+
+    <br><br>
+
+    <table style="font-size:35px; background-color: #c2b18c;  border: 2px solid black;">
+      <th> Lesson 3 </th>
+      <tr>
+        <td> This lesson taught us more about functions!.</td>
+        <td><img src="LESSON3.png" height="450" width="1000" alt="picture"></td>
+      </tr>
+    </table>
+    <br><br>
+
+    <table style="font-size:35px; background-color: #c2b18c;  border: 2px solid black;">
+      <th> Lesson 4 </th>
+      <tr>
+        <td> This lesson taught us more about loops!</td>
+        <td><img src="LESSON4.png" height="450" width="1000" alt="picture"></td>
+      </tr>
+    </table>
+    <br><br>
+
+    <p>Say the three-digit spell to defeat cookie God!?</p>
+    <form name="example">
+      <input type="text" name="answer" value="">
+      <input type="button" name="answerbutton" value="SAY!" onClick="check()">
+    </form>
+  </div>
+</body>
+</html>

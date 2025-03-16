@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<title>SAN LUIS PORTFOLIO</title>
+<link rel="stylesheet" href="styles.css">
+
+<script type="text/javascript">
+function bookcheck() {
+var book = document.frmbook.cmbbook.value; 
+switch (book) {
+case "1":
+alert("You have met the muffin man!! But beware, he says that the cookie God is still angered. Look at the 'pages' section, scan through the  letters of each icon, and place it into the ominous box.. of the 'Lessons' page!");
+break; 
+case "2":
+alert("To eat a muffin, oh so sweet. To eat a muffin, what a treat! to have the berries, taste them all, watch ass all the flavor falls!");
+break; 
+default:
+alert("undetermined");
+break; 
+}
+}
+</script>
+</head>
+
+<style>
+.container {
+width: 75%;
+background-color: #cad5e6;
+opacity: 0.79; 
+padding: 20px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+float: right;
+}
+</style>
+
+<style>
+th, td {
+border-radius: 10px;
+}
+
+.Pages{
+width: 20%;
+margin: 20px auto;
+opacity: 0.9999999; 
+padding: 20px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+float: left; 
+border-width: thick;
+border: 2px solid black;
+background-color: #c2b18c;
+}
+</style>
+
+<body style="color: black; background-color: #c2b18c; font-family: 'Times New Roman', Times, serif;">
+
+<div class="Pages">
+<table>
+<tr>
+<td><h1 align="center"><u> Pages </u></h1></td>
+</tr>
+<tr>
+<td align="center"><img src="ACTIVITIES.png" height="250" width="330" align="left" alt="lol"></td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td align="center"><a href="Lessons.html"><img src="LESSONS.png" height="250" width="330" align="left" alt="lol"></a></td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td align="center"><a href="index.html"><img src="Home.png" height="250" width="330" align="left" alt="lol"></a></td>
+</tr>
+<tr>
+<td><p><b>PLAY ME</b><i> 505 | Arctic Monkeys</i></p>
+<audio controls="play" src="505.mp3" height="350" width="430" align="left" alt="lol"></audio></td>
+</tr>
+</table>
+
+</div>
+
+<div class="container">
+<table style="font-size:60px" align="center">
+<tr>
+<td><h1 style="border: 2px solid black; background-color: #c2b18c;"><u> Activities </u></h1></td>
+</tr>
+</table>
+
+<table style="font-size:35px; background-color: #c2b18c; text-align: center; border: 2px solid black;">
+<tr>
+<td>As you keep scrolling down, you will be able to reminisce all of the important activities and events!</td>
+</tr>
+</table>
+<br><br><br><br>
+
+<table style="font-size:35px; background-color: #c2b18c;  border: 2px solid black;">
+<th> One act Musical </th>
+<tr>
+<td> This picture and video shows our process in making our musical for English "<i>Silenced in the Sixties</i>" and here you can see the Salon girls practicing and my poster! ^^</td>
+</tr>
+</table>
+<br><br>
+
+<table style="font-size:35px; background-color: #c2b18c;  border: 2px solid black; float: right;">
+<tr>
+<td><img src="poster.jpg" height="750" width="520" alt="picture"></td>
+</tr>
+</table>
+
+<br><br>
+
+<table style="font-size:35px; background-color: #c2b18c;  border: 2px solid black; float: left;">
+<tr>
+<td><video controls="play" src="SALON.mp4" height="450" width="520" alt="lol"></td>
+</tr>
+</table>
+
+<table style="font-size:35px; background-color: #c2b18c;  border: 2px solid black; float: left;">
+<th> Art fair </th>
+<tr>
+<td> This picture shows some people from our class working hard in art fair! ^^</td>
+<td><img src="art.jpg" height="450" width="520" alt="picture"></td>
+</tr>
+</table>
+
+<br><br>
+
+<table style="font-size:35px; background-color: #c2b18c;  border: 2px solid black; float: left;">
+<th> Art fair </th>
+<tr>
+<td> In this final category, you can see my class, 9-Family, and really, all the classes sitting down at the multi-purpose court for the miting de avance of the SSG! ^^</td>
+<td><img src="meeting.jpg" height="450" width="520" alt="picture"></td>
+</tr>
+</table>
+
+<br><br>
+
+<table style="font-size:35px; background-color: #c2b18c;  border: 2px solid black; float: left;">
+<th> Art fair </th>
+<tr>
+<td> Oh my, I forgot about the streetdance! ^^</td>
+<td><img src="street.jpg" height="450" width="520" alt="picture"></td>
+</tr>
+</table>
+</div>
+
+<div class="container">
+<form name="frmbook">
+<select name="cmbbook">
+<option value="1">Woah, I wanna meet the muffin man!!</option>
+<option value="2">Let me see the poem!</option>
+</select>
+<input type="button" name="combo" value="Do you?" onClick="bookcheck()">
+</form>
+</div>
+
+</body>
+</html>
